@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a52cd6d2-3afd-4012-9d16-7c5806830ad3" name="Changes" comment="feat: implementa lógicas iniciais de menu">
-      <change afterPath="$PROJECT_DIR$/src/com/todoList/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/todoList/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/todoList/Application.java" afterDir="false" />
+    <list default="true" id="a52cd6d2-3afd-4012-9d16-7c5806830ad3" name="Changes" comment="atualiza configurações do projeto">
       <change beforePath="$PROJECT_DIR$/src/com/todoList/Menu.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/todoList/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/todoList/Task.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +79,7 @@
       <option name="presentableId" value="Default" />
       <updated>1707353479605</updated>
       <workItem from="1707353480648" duration="5225000" />
-      <workItem from="1707405925552" duration="9681000" />
+      <workItem from="1707405925552" duration="10001000" />
     </task>
     <task id="LOCAL-00001" summary="Commit inicial">
       <option name="closed" value="true" />
@@ -117,7 +113,39 @@
       <option name="project" value="LOCAL" />
       <updated>1707359180587</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="feat: refatoração da classe Application para Client">
+      <option name="closed" value="true" />
+      <created>1707416925584</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1707416925584</updated>
+    </task>
+    <task id="LOCAL-00006" summary="feat: implementa funcionalidades de criação, listagem e deleção de tarefas">
+      <option name="closed" value="true" />
+      <created>1707417001055</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1707417001055</updated>
+    </task>
+    <task id="LOCAL-00007" summary="feat: muda abordagem de comparação e tipo de data">
+      <option name="closed" value="true" />
+      <created>1707417045438</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1707417045438</updated>
+    </task>
+    <task id="LOCAL-00008" summary="atualiza configurações do projeto">
+      <option name="closed" value="true" />
+      <created>1707417106853</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1707417106853</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -128,6 +156,10 @@
     <MESSAGE value="feat: implementa a classe task" />
     <MESSAGE value="feat: indica classe main" />
     <MESSAGE value="feat: implementa lógicas iniciais de menu" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: implementa lógicas iniciais de menu" />
+    <MESSAGE value="feat: refatoração da classe Application para Client" />
+    <MESSAGE value="feat: implementa funcionalidades de criação, listagem e deleção de tarefas" />
+    <MESSAGE value="feat: muda abordagem de comparação e tipo de data" />
+    <MESSAGE value="atualiza configurações do projeto" />
+    <option name="LAST_COMMIT_MESSAGE" value="atualiza configurações do projeto" />
   </component>
 </project>
