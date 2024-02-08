@@ -1,11 +1,12 @@
 package com.todoList;
-import java.util.Date;
-import java.util.Objects;
+
+import java.time.LocalDate;
+import java.util.Comparator;
 
 
-public class Task implements Comparable{
+public class Task {
 
-    public enum Status{
+    public enum Status {
         todo,
         doing,
         done
@@ -13,13 +14,19 @@ public class Task implements Comparable{
 
     private String name;
     private String description;
-    private Date deadline;
+    private LocalDate deadline;
     private int priority;
     private String category;
     private Status status;
+    public static final Comparator<Task> taskComparator = new Comparator<Task>() {
+        @Override
+        public int compare(Task task, Task t1) {
+            return Integer.compare(task.getPriority(), t1.getPriority());
+        }
+    };
 
 
-    public Task(String name, String description, Date deadline, int priority, String category, Status status) {
+    public Task(String name, String description, LocalDate deadline, int priority, String category, Status status) {
         this.name = name;
         this.description = description;
         this.deadline = deadline;
@@ -28,26 +35,18 @@ public class Task implements Comparable{
         this.status = status;
     }
 
-    //overrides
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Task task = (Task) o;
-        return Objects.equals(name, task.name) && Objects.equals(description, task.description);
-    }
 
     @Override
-    public int hashCode() {
-        return Objects.hash(name, description);
+    public String toString() {
+        return "Task{" +
+                "name='" + name + '\'' +
+                ", description='" + description + '\'' +
+                ", deadline=" + deadline +
+                ", priority=" + priority +
+                ", category='" + category + '\'' +
+                ", status=" + status +
+                '}';
     }
-
-    //TODO
-    @Override
-    public int compareTo(Object o) {
-        return 0;
-    }
-
 
     //getters
     public String getName() {
@@ -58,7 +57,7 @@ public class Task implements Comparable{
         return description;
     }
 
-    public Date getDeadline() {
+    public LocalDate getDeadline() {
         return deadline;
     }
 
