@@ -4,8 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a52cd6d2-3afd-4012-9d16-7c5806830ad3" name="Changes" comment="atualiza configurações do projeto">
-      <change beforePath="$PROJECT_DIR$/src/com/todoList/Menu.java" beforeDir="false" />
+    <list default="true" id="a52cd6d2-3afd-4012-9d16-7c5806830ad3" name="Changes" comment="fix: deleta a classe Menu">
+      <change afterPath="$PROJECT_DIR$/frontend/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Todo list.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Todo list.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/todoList/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/com/todoList/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/todoList/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/com/todoList/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/todoList/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/com/todoList/Task.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +24,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="HTML File" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -35,10 +46,13 @@
   "keyToString": {
     "Application.Application.executor": "Run",
     "Application.Client.executor": "Run",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "JavaScript Debug.index.html.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
+    "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -50,6 +64,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/backend" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.todoList.Client" />
@@ -79,7 +98,12 @@
       <option name="presentableId" value="Default" />
       <updated>1707353479605</updated>
       <workItem from="1707353480648" duration="5225000" />
-      <workItem from="1707405925552" duration="10001000" />
+      <workItem from="1707405925552" duration="11828000" />
+      <workItem from="1707429693241" duration="27000" />
+      <workItem from="1708527939265" duration="25000" />
+      <workItem from="1708527975620" duration="12000" />
+      <workItem from="1708528002155" duration="6000" />
+      <workItem from="1708528265479" duration="1111000" />
     </task>
     <task id="LOCAL-00001" summary="Commit inicial">
       <option name="closed" value="true" />
@@ -145,7 +169,15 @@
       <option name="project" value="LOCAL" />
       <updated>1707417106853</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="fix: deleta a classe Menu">
+      <option name="closed" value="true" />
+      <created>1707417192507</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1707417192507</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -160,6 +192,7 @@
     <MESSAGE value="feat: implementa funcionalidades de criação, listagem e deleção de tarefas" />
     <MESSAGE value="feat: muda abordagem de comparação e tipo de data" />
     <MESSAGE value="atualiza configurações do projeto" />
-    <option name="LAST_COMMIT_MESSAGE" value="atualiza configurações do projeto" />
+    <MESSAGE value="fix: deleta a classe Menu" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: deleta a classe Menu" />
   </component>
 </project>
