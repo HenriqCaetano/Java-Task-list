@@ -47,6 +47,7 @@ public class Application {
     }
 
     private void writeMenu() {
+        System.out.println("====================");
         System.out.println("1. Criar nova tarefa");
         System.out.println("2. Consultar tarefas atuais");
         System.out.println("3. Deletar uma tarefa");
@@ -113,6 +114,7 @@ public class Application {
             System.out.println("1. Listar por Categoria");
             System.out.println("2. Listar por prioridade");
             System.out.println("3. Listar por status");
+            System.out.println("4. Consultar número de tarefas em cada status");
             System.out.println("Escolha como listar: ");
             int userChoice = Integer.parseInt(userIn.nextLine());
 
@@ -152,6 +154,20 @@ public class Application {
                         System.out.println(t);
                     }
                 }
+            }
+            else if (userChoice == 4){
+                int tasksInTodo = 0;
+                int tasksInDoing = 0;
+                int tasksInDone = 0;
+
+                for (Task t: taskList){
+                    if(t.getStatus() == Task.Status.todo) tasksInTodo++;
+                    else if(t.getStatus() == Task.Status.doing) tasksInDoing++;
+                    else tasksInDone++;
+                }
+                System.out.println("Tasks todo: " + tasksInTodo);
+                System.out.println("Tasks in doing " + tasksInDoing);
+                System.out.println("Tasks done " + tasksInDone);
             }
         } catch (Exception e) {
             System.out.println("Entrada inválida!");
