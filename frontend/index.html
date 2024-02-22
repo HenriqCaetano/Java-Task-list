@@ -3,16 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <title>Todo List</title>
+
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <form>
-        <input type="text" placeholder="nome da tarefa">
 
+<div class="form-container">
+    <form id="creation-form">
+        <div>
+            <input type="text" name="nome" placeholder="nome da tarefa">
+            <input type="text" name="descricao" placeholder="descrição">
+            <input type="date" name="dataLimite" placeholder="data de término">
 
+            <label for="prioridade">Nível de prioridade:</label>
+            <select name="prioridade" id="prioridade">
+                Status
+                <option value="1" selected>1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+
+            <input type="text" name="categoria" placeholder="categoria">
+        </div>
+
+        <div>
+            <label for="todo-selection"> Todo
+                <input type="radio" id="todo-selection" name="status" class="prioridade" value="todo">
+            </label>
+
+            <label for="doing-selection"> Doing
+                <input type="radio" id="doing-selection" name="status" class="prioridade" value="doing">
+            </label>
+
+            <label for="done-selection"> Done
+                <input type="radio" id="done-selection" name="status" class="prioridade" value="done">
+            </label>
+        </div>
+
+        <button type="submit" value="Submit" id="submit-button">Enviar</button>
     </form>
+</div>
+
+<div>
+
+    <ul id="task-list">
+
+    </ul>
+
+</div>
+
 
 </body>
 
 
-
+<script src="script.js"></script>
 </html>
