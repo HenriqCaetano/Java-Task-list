@@ -2,15 +2,15 @@ const submitButton = document.getElementById("submit-button");
 const taskList = document.getElementById("task-list");
 let tasks = [];
 
+//evento para processar o formulário
 submitButton.onclick = (e) => {
     e.preventDefault();
-    taskList.innerHTML = '';
 
-    let form = document.getElementById("creation-form");
     let formData = new FormData(form);
+    let form = document.getElementById("creation-form");
     let task = {}
 
-    //constroi o objeto tarefa
+    //constrói o objeto tarefa
     formData.forEach((value, key) => task[key] = value)
 
     //verifica se todos os campos estão presentes
@@ -23,20 +23,37 @@ submitButton.onclick = (e) => {
     }
 
     //verifica se há duplicata
-    for(let i in tasks){
-        if(task.nome === tasks[i].nome){
-            task = null;
-            alert("Tarefa já existente")
-            break;
+    let updatedFlag = false; //inicialmente considera que não haverá atualização
+    tasks.forEach((value, index, array) => {
+        //atualiza a tarefa, caso ela já exista
+        if (value.nome === task.nome) {
+            array[index] = task;
+            updatedFlag = true
+            alert(`Tarefa ${task.nome} atualizada`)
         }
-    }
-    if(task) tasks.push(task);
-
-
-    tasks.forEach((value) => {
-        let taskDisplay = `Tarefa:${value.nome}, Descrição: ${value.descricao}, Prioridade: ${value.prioridade}, Categoria: ${value.categoria}, Entrega: ${value.dataLimite} Status:${value.status}.`
-        taskList.innerHTML += `<li>${taskDisplay} <button>Deletar</button></li>`
     })
+
+    if (task && !updatedFlag) tasks.push(task);
+    taskList.innerHTML = '';
+    tasks.forEach(displayTasks);
 }
 
+//lista para mostras as tarefas atuais
+const displayTasks = (value) => {
+    let taskDisplay = `Tarefa:${value.nome}, Descrição: ${value.descricao}, Prioridade: ${value.prioridade}, Categoria: ${value.categoria}, Entrega: ${value.dataLimite} Status:${value.status}.`
+    taskList.innerHTML += `<li>${taskDisplay} <button onclick='deleteTask()'>Deletar</button></li>`
+}
+
+//lida com a deleção de tarefas
+const deleteTask = () => {
+    let taskToBeDeleted = event.target.parentNode.innerHTML.slice(7).split(",")[0]
+    tasks.forEach((value, index, array) => {
+        if (value.nome === taskToBeDeleted) {
+            array.splice(index, 1); //retira a tarefa. como os nomes são únicos, apenas uma será deletada
+        }
+    })
+    //atualiza o display de tarefas
+    taskList.innerHTML = '';
+    tasks.forEach(displayTasks);
+}
 
