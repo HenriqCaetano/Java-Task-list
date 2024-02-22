@@ -1,0 +1,13 @@
+input{
+    display: block;
+    margin: 10px;
+}
+
+.prioridade{
+    display: inline;
+}
+
+.form-container{
+    border: 5px solid red;
+    width: fit-content;
+}
