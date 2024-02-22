@@ -4,16 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a52cd6d2-3afd-4012-9d16-7c5806830ad3" name="Changes" comment="fix: deleta a classe Menu">
-      <change afterPath="$PROJECT_DIR$/frontend/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="a52cd6d2-3afd-4012-9d16-7c5806830ad3" name="Changes" comment="feat: atualiza arquivos de configuração">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Todo list.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Todo list.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/todoList/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/com/todoList/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/todoList/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/com/todoList/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/todoList/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/com/todoList/Task.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,28 +37,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Application.executor": "Run",
-    "Application.Client.executor": "Run",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "JavaScript Debug.index.html.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Application.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Client.executor&quot;: &quot;Run&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;JavaScript Debug.index.html.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/backend" />
@@ -103,7 +98,8 @@
       <workItem from="1708527939265" duration="25000" />
       <workItem from="1708527975620" duration="12000" />
       <workItem from="1708528002155" duration="6000" />
-      <workItem from="1708528265479" duration="1111000" />
+      <workItem from="1708528265479" duration="5415000" />
+      <workItem from="1708542606872" duration="2179000" />
     </task>
     <task id="LOCAL-00001" summary="Commit inicial">
       <option name="closed" value="true" />
@@ -177,7 +173,31 @@
       <option name="project" value="LOCAL" />
       <updated>1707417192507</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="fix: isola arquivos do backend">
+      <option name="closed" value="true" />
+      <created>1708529679854</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1708529679854</updated>
+    </task>
+    <task id="LOCAL-00011" summary="feat: inicia arquivos do frontend">
+      <option name="closed" value="true" />
+      <created>1708529701133</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1708529701133</updated>
+    </task>
+    <task id="LOCAL-00012" summary="feat: atualiza arquivos de configuração">
+      <option name="closed" value="true" />
+      <created>1708529715788</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1708529715788</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -193,6 +213,9 @@
     <MESSAGE value="feat: muda abordagem de comparação e tipo de data" />
     <MESSAGE value="atualiza configurações do projeto" />
     <MESSAGE value="fix: deleta a classe Menu" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: deleta a classe Menu" />
+    <MESSAGE value="fix: isola arquivos do backend" />
+    <MESSAGE value="feat: inicia arquivos do frontend" />
+    <MESSAGE value="feat: atualiza arquivos de configuração" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: atualiza arquivos de configuração" />
   </component>
 </project>
